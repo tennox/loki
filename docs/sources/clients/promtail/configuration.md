@@ -1869,13 +1869,13 @@ Available meta labels:
   * `__meta_docker_container_id`: the ID of the container
   * `__meta_docker_container_name`: the name of the container
   * `__meta_docker_container_network_mode`: the network mode of the container
-  * `__meta_docker_container_label_<labelname>`: each label of the container
+  * `__meta_docker_container_label_<labelname>`: each label of the container (special characters like `.` or `-` are replaced with `_`)
   * `__meta_docker_container_log_stream`: the log stream type `stdout` or `stderr`
   * `__meta_docker_network_id`: the ID of the network
   * `__meta_docker_network_name`: the name of the network
   * `__meta_docker_network_ingress`: whether the network is ingress
   * `__meta_docker_network_internal`: whether the network is internal
-  * `__meta_docker_network_label_<labelname>`: each label of the network
+  * `__meta_docker_network_label_<labelname>`: each label of the network (special characters like `.` or `-` are replaced with `_`)
   * `__meta_docker_network_scope`: the scope of the network
   * `__meta_docker_network_ip`: the IP of the container in this network
   * `__meta_docker_port_private`: the port on the container
